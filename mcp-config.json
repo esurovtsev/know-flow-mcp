@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "knowflow": {
+      "command": "node",
+      "args": ["dist/index.js"]
+    }
+  }
+}
