@@ -8,6 +8,8 @@ A versatile, unified knowledge retrieval tool operating according to the Model C
 
 KnowFlow simulates a simplified version of Retrieval-Augmented Generation (RAG), enabling LLMs to dynamically fetch context or domain-specific information from external knowledge bases, resulting in precise, context-aware responses.
 
+![KnowFlow Architecture](KnowFlow.png)
+
 ### Core Features
 
 - Responds to knowledge retrieval requests from MCP-compatible LLMs
