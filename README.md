@@ -138,7 +138,10 @@ yarn test
 know-flow-mcp/
 ├── src/                # Source code
 │   ├── index.ts        # Entry point
-│   └── server.ts       # MCP server definition and tool registration
+│   ├── server.ts       # MCP server definition and tool registration
+│   ├── core/           # Core functionality
+│   ├── plugins/        # Plugin system for knowledge sources
+│   └── services/       # Services including KnowledgeService
 ├── dist/               # Compiled JavaScript files
 ├── .gitignore          # Git ignore file
 ├── LICENSE             # MIT License
@@ -146,6 +149,15 @@ know-flow-mcp/
 ├── README.md           # Project documentation
 └── tsconfig.json       # TypeScript configuration
 ```
+
+## 🔌 Plugin System
+
+KnowFlow uses a plugin-based architecture to integrate with different knowledge sources:
+
+- Plugins are discovered synchronously at startup
+- Each plugin represents a different knowledge source (docs, jira, confluence, etc.)
+- The KnowledgeService coordinates searches across all available plugins
+- New knowledge sources can be added by implementing the plugin interface
 
 ## 🔮 Future Roadmap
 
