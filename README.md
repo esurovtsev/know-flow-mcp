@@ -107,16 +107,15 @@ Where:
 ### Example Response Format
 
 ```json
-[
-  {
-    "source": {
-      "location": "local_file",
-      "title": "architecture-notes.md"
-    },
-    "modified": "2024-03-14",
-    "snippet": "We agreed to consolidate all backend modules under a single monorepo using Nx."
+{
+  "content": "We agreed to consolidate all backend modules under a single monorepo using Nx.",
+  "metadata": {
+    "reference": "architecture-notes.md",
+    "source": "docs",
+    "lastModified": "2024-03-14",
+    "score": 0.95
   }
-]
+}
 ```
 
 ## 🧪 Testing
